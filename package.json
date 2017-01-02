@@ -1,0 +1,14 @@
+{
+  "name": "AntiwebBLOG",
+  "bin": {
+    "blog": "./server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "stylus": "^0.54.5"
+  },
+  "author": "4ntiweb <admin@hepstar.kr> (http://antiweb.kr)",
+  "license": "MIT"
+}

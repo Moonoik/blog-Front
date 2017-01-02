@@ -1,0 +1,130 @@
+.overlay
+	display none
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background-color rgba(0, 0, 0, 0.4)
+	background-repeat no-repeat
+	background-position center center
+	z-index 100000
+	cursor default
+#postsWrapper
+	text-align left
+	.contentHeader
+		width 100%
+		padding .5em 0
+		border-bottom 1px solid #d8d8d8
+		text-align center
+		img
+			margin 0 auto
+			max-width 100%
+		h1, p
+			text-align left
+			font-weight 900
+			margin .25em 0
+		h1
+			font-size 2.5em
+		.contentDetail
+			text-align left
+			font-size 1.15em
+			font-weight bold
+			i
+				line-height 1.5
+				span
+					padding 0 .75em 0 .25em
+					font-family 'Noto Sans Korean', 'Nanum Barun Gothic', sans-serif
+					font-weight 500
+	.contentAll, .commentAll
+		h1, h2, h3
+			margin .5em 0
+		p
+			margin .15em 0
+			line-height 1.5
+		img
+			max-width 100%
+			&:target
+				height 450px
+				width 500px
+	.contentAll
+		font-size 1.25em
+		line-height 1.25
+		border-bottom 1px solid #d8d8d8
+		.contentTag
+			padding 1em 0 .5em 0
+			color #3498db
+			font-size 1em
+			font-weight bold
+			.highlight
+				background-color #b3e5fc
+				margin 0 0 0 0.25em
+	.commentAll
+		width 100%
+		h1
+			font-size 1.8em
+		.comment
+			border-bottom 1px solid #d8d8d8
+			h1
+				display inline-block
+				font-size 1.5em
+				&:nth-of-type(2)
+					font-size 1.25em
+					margin 0 1em
+			p
+				font-size 1.2em
+	.commentWrite
+		padding 1.5em 0
+		width 70%
+		input[type='text']
+			width 15em
+			height 1.5em
+			font-size 1.25em
+			font-weight 700
+			border 0
+			color #616161
+			border-bottom 2px solid #d8d8d8
+			font-family 'Noto Sans Korean', 'Nanum Barun Gothic', sans-serif
+			display inline-block
+		textarea
+			width 100%
+			height 10em
+			margin 1.5em 0
+			font-size 1.25em
+			font-weight 700
+			border 2px solid #d8d8d8
+			color #616161
+			resize none
+			font-family 'Noto Sans Korean', 'Nanum Barun Gothic', sans-serif
+			display inline-block
+		button
+			width 100%
+			height 3em
+			font-size 1.5em
+			font-weight 800
+			border 0
+			color #FFF
+			background-color #e53935
+@media (max-width: 1366px)
+	#postsWrapper
+		padding 2.5em
+		width calc(100% - 5em)
+@media (max-width: 900px), (max-device-width: 900px)
+	.overlay
+		background-size 100% !important
+	#postsWrapper
+		border-top 1px solid #d8d8d8
+		padding 2.5em 1.5em
+		width calc(100% - 3em)
+		.commentWrite
+			width 100%
+@media (max-width: 480px), (max-device-width: 480px)
+	#postsWrapper
+		font-size .9em
+		.commentAll
+			.comment
+				h1
+					font-size 1.2em
+					&:nth-of-type(2)
+						font-size 1em
+						margin 0 .5em

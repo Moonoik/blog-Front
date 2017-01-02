@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Dekko|Hammersmith+One|Pontano+Sans')
+@import url('https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css')
+@import url('https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css')
+@keyframes fadein
+	from
+		opacity 0
+	to
+		opacity 1
+
+/* Firefox < 16 */
+@-moz-keyframes fadein
+	from
+		opacity 0
+	to
+		opacity 1
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein
+	from
+		opacity 0
+	to
+		opacity 1
+
+/* Internet Explorer */
+@-ms-keyframes fadein
+	from
+		opacity 0
+	to
+		opacity 1
+
+/* Opera < 12.1 */
+@-o-keyframes fadein
+	from
+		opacity 0
+	to
+		opacity 1
+@-webkit-keyframes fadeIn
+	from
+		opacity 0
+	to
+		opacity 1
+@keyframes fadeIn
+	from
+		opacity 0
+	to
+		opacity 1
+input:focus, textarea:focus
+	outline none
+body
+	padding 0
+	margin 0
+	background-color #EEE
+	font-family 'Noto Sans Korean', 'Nanum Barun Gothic', sans-serif
+section
+	width 1400px
+	margin auto
+	background-color #FFF
+	color #424242
+	text-align center
+	z-index 100
+	padding 2.5em 3em
+#headerSection
+	height 7em
+	.mobileHeader
+		display none
+	.headerLayout
+		width 33.333%
+		height 100%
+		float left
+		text-align left
+		.contactIcon
+			width auto
+			height 100%
+			padding 0 4em
+			a, i
+				font-size 2.5em
+				line-height 2.75
+				text-align center
+				color #424242
+				text-decoration none
+				padding 0 .5em
+				cursor default
+				&:hover
+					color #2196F3
+		.titleName
+			line-height 1
+			text-align center
+			h1
+				margin .25em 0
+				font-family 'Dekko', cursive
+				font-size 3em
+				font-weight 900
+			p
+				font-family 'Pontano Sans', 'Noto Sans Korean', 'Nanum Barun Gothic', sans-serif
+				font-size 1em
+				font-weight 600
+		.searchBar
+			text-align right
+	.searchLayout
+		display none
+		position fixed
+		top 0
+		left 0
+		width 100%
+		height 100%
+		z-index 100000
+		background-color #FFF
+		.closeBtn
+			font-size 3em
+			font-weight 900
+			margin .5em 1em
+			float right
+			cursor default
+		.searchContent
+			width 50em
+			margin auto
+			padding 10em 0
+			h1
+				font-size 2.25em
+			input[type='text'], button
+				width 40em
+				height 2em
+				margin 1em 0
+				font-size 1em
+				text-align center
+				display inline-block
+				border 1px solid #e53935
+			button
+				width 20em
+				background-color #e53935
+				border 0
+				color #FFF
+				font-size 2em
+				font-weight 900
+			p
+				font-size 1.4em
+				font-weight 500
+#menuLayout
+	border-top 1px solid #d8d8d8
+	border-bottom 1px solid #d8d8d8
+	color #424242
+	height 2em
+	padding 1em 3em
+	ul
+		list-style-type none
+		position relative
+		margin 0
+		padding 0
+		z-index 1000
+		a
+			font-family 'Hammersmith One', sans-serif
+			line-height 1.75
+			font-size 1.25em
+			font-weight normal
+			display block
+			padding 0 .5em
+			text-decoration none
+			color #424242
+			cursor default
+		li
+			position relative
+			display inline-block
+			margin 0
+			padding 0
+			&.current-menu-item
+				background-color #DDD
+			&:hover
+				background-color #F6F6F6
+				& > ul
+					display block
+		ul
+			display none
+			position absolute
+			top 100%
+			background #FFF
+			padding 0
+			border-style solid
+			border-width 1px
+			border-color #d8d8d8
+			li
+				float none
+				font-size .9rem
+				border-bottom 1px solid #d8d8d8
+				width 10rem
+				&:last-child
+					border 0
+			a
+				line-height 120%
+				padding .5rem
+			ul
+				top 0
+				left 100%
+@media (max-width: 1600px)
+	section
+		width 1250px
+@media (max-width: 1366px)
+	section
+		width calc(100% - 2em)
+		padding 2.5em 1em
+	#menuLayout
+		padding 1em
+	#headerSection
+		.headerLayout
+			.contactIcon
+				padding 0 1em
+@media (max-width: 900px), (max-device-width: 900px)
+	section
+		overflow-x hidden
+		padding 0
+		width 100%
+	#menuLayout
+		display none
+		position absolute
+		width 12.5em
+		height auto
+		border 0
+		background-color #1a1919
+		z-index 10000
+		font-size 1em
+		ul
+			background-color #FFF
+			a
+				font-size 1.5em
+			li
+				width 100%
+				&.current-menu-item
+					background-color #FFF
+				&:hover
+					background-color #FFF
+				ul
+					display block
+				
+			ul
+				position relative
+				list-style-type none
+				ul
+					left 0
+				li
+					width auto
+	#headerSection
+		height 3.5em
+		padding .5em 0
+		.headerLayout
+			display none
+		.mobileHeader
+			display block
+			font-size 1.8em
+			line-height 1.8
+			span
+				font-family 'Dekko', cursive
+				font-weight 900
+			.subMenu
+				text-align center
+				width 3em
+				float left
+				i
+					cursor default
+				&:nth-of-type(2)
+					float right
+@media (max-device-width: 768px)
+	body
+		font-size 14px !important
+@media (max-width: 768px), (max-device-width: 768px)
+	#menuLayout
+		width 12.5em
+	#headerSection
+		.searchLayout
+			.searchContent
+				width 40em
+				input[type='text'], button
+					width 30em
+				button
+					width 15em
+@media (max-device-width: 640px)
+	body
+		font-size 13px !important
+@media (max-width: 640px), (max-device-width: 640px)
+	#headerSection
+		.searchLayout
+			.searchContent
+				width 30em
+				input[type='text'], button
+					width 25em
+				button
+					width 12.5em
+@media (max-device-width: 480px)
+	body
+		font-size 15px !important
+@media (max-width: 480px), (max-device-width: 480px)
+	#headerSection
+		.searchLayout
+			.searchContent
+				width 22.5em
+				input[type='text'], button
+					width 20em
+				button
+					width 10em
+@media (max-device-width: 380px)
+	body
+		font-size 13px !important

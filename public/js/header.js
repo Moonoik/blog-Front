@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	Slide();
+	$('i.fa-search').click(function(){
+		$('.searchLayout').fadeIn(1000);
+	});
+	$('.closeBtn').click(function(){
+		$('.searchLayout').fadeOut(1000);
+	});
+});

@@ -1,0 +1,69 @@
+doctype html
+html
+	head
+		title antiweb blog
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		script(type='text/javascript', src='https://code.jquery.com/jquery-3.1.1.min.js')
+		script(type='text/javascript', src='/js/define.js')
+		script(type='text/javascript', src='/js/header.js')
+		link(rel='stylesheet', href='/css/font-awesome/css/font-awesome.min.css')
+		link(rel='stylesheet', href='/css/header.css')
+		link(rel='stylesheet', href='/css/footer.css')
+		block scripts
+	body
+		section#headerSection
+			div.headerLayout
+				div.contactIcon
+					a(aria-hidden='true', href='https://www.facebook.com/HEPSTAR00', target='_blank', class='fa fa-facebook')
+					a(aria-hidden='true', href='https://github.com/Moonoik', target='_blank', class='fa fa-github')
+					a(aria-hidden='true', href='https://www.instagram.com/hepstar.kr/', target='_blank', class='fa fa-instagram')
+			div.headerLayout
+				div.titleName
+					h1 antiweb
+					p antiweb blog
+			div.headerLayout
+				div(class='contactIcon searchBar')
+					i(aria-hidden='true', class='fa fa-search')
+			div.searchLayout
+				div.closeBtn X
+				div.searchContent
+					h1 게시글 검색
+					input(type='text')
+					button 검색
+					p 검색할 키워드를 입력해주세요.
+			div.mobileHeader
+				div.subMenu
+					i(aria-hidden='true', class='fa fa-bars')
+				span antiweb
+				div.subMenu
+					i(aria-hidden='true', class='fa fa-search')
+		section#menuLayout
+			ul
+				li
+					a(href='#') menu a
+					ul
+						li
+							a(href='#') submenu a
+						li
+							a(href='#') submenu b
+							ul
+								li
+									a(href='#') subsuba
+								li
+									a(href='#') subsubb
+				li
+					a(href='#') menu b
+				li
+					a(href='#') menu c
+				li
+					a(href='#') menu d
+				li
+					a(href='#') menu e
+				li
+					a(href='#') menu f
+				li
+					a(href='#') menu g
+		block content
+		block foot
+			section#footer
+				span 2017 ⓒ antiweb.kr all rights reserved.

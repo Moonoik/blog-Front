@@ -1,0 +1,79 @@
+extends header
+block scripts
+	link(rel='stylesheet', href='/css/view.css')
+	link(rel='stylesheet', href='/css/highlight/shCore.css')
+	link(rel='stylesheet', href='/css/highlight/shCoreDjango.css')
+	script(type='text/javascript', src='/js/view.js')
+	script(type='text/javascript', src='/js/highlight/shCore.js')
+	script(type='text/javascript', src='/js/highlight/shBrushPython.js')
+	script(type='text/javascript', src='/js/highlight/shBrushJScript.js')
+	script(type='text/javascript', src='/js/highlight/shBrushCpp.js')
+	script(type='text/javascript', src='/js/highlight/shBrushJava.js')
+	script(type='text/javascript', src='/js/highlight/shBrushRuby.js')
+	script(type='text/javascript', src='/js/highlight/shBrushPlain.js')
+	script(type='text/javascript', src='/js/highlight/shBrushPhp.js')
+	script(type='text/javascript', src='/js/highlight/shBrushBash.js')
+	script(type='text/javascript', src='/js/highlight/shBrushPerl.js')
+	script.
+		SyntaxHighlighter.all();
+
+block content
+	div.overlay
+	section#postsWrapper
+		div.contentHeader
+			img(src='/resource/slide.jpg')
+			h1 웹 코딩?
+			div.contentDetail
+				i(class='fa fa-folder-open', aria-hidden='true')
+					span 개발
+				i(class='fa fa-calendar-check-o', aria-hidden='true')
+					span 2017-01-01 01:01:01.111
+				i(class='fa fa-eye', aria-hidden='true')
+					span 100
+				i(class='fa fa-comment', aria-hidden='true')
+					span 100
+		div.contentAll
+			h1 웹코딩?
+			p 웹코딩은 이런것이다 웹코딩은 이런것이다 웹코딩은 이런것이다 웹코딩은 이런것이다
+			h1 웹코딩?
+			p 웹코딩은 이런것이다
+			p 웹코딩은 이런것이다
+			h1 웹코딩?
+			p 웹코딩은 이런것이다
+			h1 웹코딩?
+			p 웹코딩은 이런것이다
+			pre(class='brush: python') # Code SyntaxHighlighter TEST
+				| import json
+				| 
+				| print("ASDF")
+			h1 웹코딩?
+			p 웹코딩은 이런것이다
+			img(src='/resource/slide.jpg')
+			p 이미지 누르면 확대됩니다.
+			img(src='/resource/default.png')
+			h1 웹코딩?
+			p 웹코딩은 이런것이다
+			div.contentTag
+				span 해시태그(#): 
+					span.highlight #웹
+					span ,
+					span.highlight #코딩
+		div.commentAll
+			h1 3개의 댓글
+			div.comment
+				h1 antiweb
+				h1 2017-01-01 01:01:01.111
+				p 앙 꿀잼띠
+			div.comment
+				h1 antiweb
+				h1 2017-01-01 01:01:01.111
+				p 앙 꿀잼띠
+			div.comment
+				h1 antiweb
+				h1 2017-01-01 01:01:01.111
+				p 앙 꿀잼띠
+		div.commentWrite
+			input(type='text', placeholder='이름')
+			textarea(placeholder='음담패설 및 욕설은 언제든 삭제될 수 있으니 주의해주세요!')
+			button 댓글 입력
+	append foot
